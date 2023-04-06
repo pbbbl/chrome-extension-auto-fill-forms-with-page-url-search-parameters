@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        /* html,
+        body {
+            height: 200px;
+            width: 400px;
+        } */
+
+        html,
+        body {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #222;
+            color: #eeeeee;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        div,
+        .block,
+        button {
+
+            box-sizing: border-box;
+            padding: 8px 16px;
+            white-space: nowrap;
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .block.success {
+            background-color: #285f4a;
+        }
+
+        .block.loading {
+            background-color: #264255;
+        }
+
+        button {
+            display: block;
+            padding: .5rem 1rem;
+            background-color: #222;
+            border: 1px solid #eee;
+            color: #eee;
+            border-radius: 6px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="block success" id="success">Form Filled!</div>
+    <div class="block loading" id="loading">One moment...</div>
+    <div class="block action  show" id="action">
+        <button id="action-button">Fill Form</button>
+    </div>
+    <script src='action.js'></script>
+</body>
+
+</html>
